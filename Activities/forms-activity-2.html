@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Forms</title>
+    <style>
+    .container{
+    width: 100%;
+    min-height:100vh;
+    background: linear-gradient(145deg,#153677, #4e085f);
+    padding: 10px;
+    color: coral;
+}
+h1{
+    color: white;
+    font-family: cursive;
+    text-decoration: underline;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 3px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer; 
+    border-radius: 20px; 
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sign Up Sheet</h1>
+      <form id="myForm" >
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" value="John Doe" /><br /><br />
+      
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" value="john.doe@example.com" required /><br /><br />
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8"><br /><br />
+
+        <label for="date">Your Birthday:</label>
+        <input type="date" id="date"  name="date" min="2013-09-22"><br /><br />
+
+        Your Gender:
+        <br /><br />
+        <label for="gender">Male:</label>
+        <input type="radio" id="male" name="gender" value="male"><br /><br />
+
+        <label for="gender">Female:</label>
+        <input type="radio" id="female" name="gender" value="female"><br /><br />
+
+        <label for="gender">Other/Neither:</label>
+        <input type="radio" id="other" name="gender" value="other"><br /><br />
+
+        <label for="alerts">Click to sign up for alerts:</label>
+        <input type="checkbox" id="alerts" name="alerts"><br /><br />
+
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+    <script type='text/javascript' src='./events-activity.js'></script>
+  </body>
+</html>

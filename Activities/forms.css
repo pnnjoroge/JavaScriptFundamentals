@@ -1,0 +1,30 @@
+
+.container{
+    width: 100%;
+    min-height:100vh;
+    background: linear-gradient(145deg,#153677, #4e085f);
+    padding: 10px;
+    color: coral;
+}
+h2{
+    color: white;
+    font-family: cursive;
+    text-decoration: underline;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer; 
+    border-radius: 20px; 
+}

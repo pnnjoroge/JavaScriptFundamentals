@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <title>Events</title>
+    <style>
+        .container{
+          width: 100%;
+          min-height:100vh;
+          background: linear-gradient(145deg,#153677, #4e085f);
+          padding: 10px;
+        }
+        .shoppingList{
+          width: 100%;
+          max-width: 540px;
+          background: #fff;
+          margin: 100px auto 20px;
+          padding: 20px 20px;
+          border-radius: 10px;
+
+        }
+        h2{
+          color: #ca5e06;
+          text-decoration: underline;
+        }
+        .row{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-radius: 30px;
+          padding-left: 20px;
+          margin-bottom: 25px;
+        }
+        input{
+          flex: 1;
+          border: none;
+          outline: none;
+          background: transparent;
+          padding: 10px;
+          font-weight: 14px;
+        }
+        button{
+          border: none;
+          outline: none;
+          padding: 16px 50px;
+          background: #ff5945;
+          color: #fff;
+          font-size: 16px;
+          cursor: pointer; 
+          border-radius: 20px; 
+        }
+        ul li{
+          list-style: none;
+          font-size: 17px;
+          padding: 12px 8px 12px 50px;
+          user-select: none;
+          cursor: pointer;
+          position:relative;
+        }
+        ul li span{
+          position: absolute;
+          right: 0;
+          top: 5px;
+          height: 40px;
+          width: 40x;
+          font-size: 22px;
+          line-height: 40px;
+          text-align: center;
+        }
+        ul li span::hoover{
+          background: gray;
+        }
+        ul li.checked{
+          text-decoration: line-through;
+        }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="shoppinglist">
+        <h2>Shopping List</h2>
+        <div class="row">
+          <input type="text" id="input-box" placeholder="List item">
+          <button onclick="addTask()">Add Item</button>
+        </div>
+        <ul id="list-container">
+          <!-- <li class="checked">Add Item</li>
+          <li>Add Item</li>
+          <li>Add Item</li> -->
+        </ul>
+        </id=>
+      </div>
+    </div>
+    <script type='text/javascript' src='./events-activity.js'></script>
+  </body>
+</html>
