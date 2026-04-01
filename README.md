@@ -1,2 +1,2 @@
 # JavaScriptFundamentals
-Simple JavaScript activities completed
+Simple JavaScript and JQuery activities completed
